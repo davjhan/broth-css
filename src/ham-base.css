@@ -1,0 +1,8 @@
+@layer base {
+    div {
+        @apply flex flex-col relative
+    }
+    h1,h2,h3,h4 {
+        @apply inline-flex gap-1;
+    }
+}
