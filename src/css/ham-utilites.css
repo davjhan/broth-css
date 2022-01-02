@@ -1,0 +1,6 @@
+@layer utilities {
+
+    .sticker {
+        @apply absolute -right-2 -top-3;
+    }
+}

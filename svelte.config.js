@@ -1,23 +1,25 @@
 import adapter from '@sveltejs/adapter-auto'
-import preprocess from 'svelte-preprocess'
+import { mdsvex } from 'mdsvex'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     // Consult https://github.com/sveltejs/svelte-preprocess
     // for more information about preprocessors
-    preprocess: [],
-
+    preprocess: [mdsvex({
+        extensions: ['.svx', '.mdx']
+    })],
+    extensions: ['.svelte', '.svx', '.mdx'],
 
     kit: {
         adapter: adapter(),
 
-        // hydrate the <div id="svelte"> element in src/app.html
+        // hydrate the <div path="svelte"> element in src/app.html
         target: '#svelte',
 
         vite: {
             // other vite config
             optimizeDeps: {
-                include: ["svelte-hero-icons"],
+                include: ['svelte-hero-icons'],
             },
         },
 
