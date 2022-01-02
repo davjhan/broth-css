@@ -1,7 +1,0 @@
-@import './ham-base.css';
-@import './ham-utilites.css';
-@import './ham-components.css';
-@import './ham-typography.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

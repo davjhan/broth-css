@@ -1,0 +1,7 @@
+@import 'broth-base.css';
+@import 'broth-utilites.css';
+@import 'broth-components.css';
+@import 'broth-typography.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
