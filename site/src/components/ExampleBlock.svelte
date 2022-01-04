@@ -19,7 +19,7 @@
 
 <div class='area'>
     <div class='items-start p-2'>
-        <div bind:this={rawCodeElement} class='grid grid-flow-row gap-2 auto-rows-min'>
+        <div bind:this={rawCodeElement} class='grid grid-flow-row auto-rows-min gap-2'>
 
             <slot />
 
@@ -27,11 +27,11 @@
         </div>
     </div>
     {#if rawCodeElement}
-        <hr class='wide mt-4 '>
+        <hr class='mt-4 wide'>
 
-        <div class='bg-shade -m-4 p-4 rounded-b'>
+        <div class='p-4 -m-4 rounded-b bg-shade'>
 
-            <pre class='whitespace-pre-wrap '>
+            <pre class='whitespace-pre-wrap'>
             {@html prettifiedCode}
             </pre>
         </div>

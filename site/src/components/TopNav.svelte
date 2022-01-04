@@ -3,10 +3,10 @@
     import { page } from '$app/stores'
 </script>
 
-<nav class='py-2 '>
+<nav class='py-2'>
     <button class='px-2' on:click={() => goto('/')}>
         <h4>Broth CSS</h4>
-        <div class='badge ml-1'>Alpha</div>
+        <div class='ml-1 badge'>Alpha</div>
     </button>
     <div class='flex-grow'></div>
     <ul>

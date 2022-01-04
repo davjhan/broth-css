@@ -18,10 +18,10 @@
     }]
 </script>
 <div class='flex-row gap-12 mt-20'>
-    <nav class='flex-col w-32 items-stretch gap-4'>
+    <nav class='flex-col gap-4 items-stretch w-32'>
         {#each menuItems as item}
             <div class='mb-2'>
-                <span class='label ml-2 text-xs'>{item.title}</span>
+                <span class='ml-2 text-xs label'>{item.title}</span>
                 {#each item.routes as route}
                     <button
                             class=''

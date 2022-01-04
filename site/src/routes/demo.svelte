@@ -1,5 +1,5 @@
 <div>
-    <h4 class='p-4 text-stroke-teal-700 flex'>Whatsup</h4>
+    <h4 class='flex p-4 text-stroke-teal-700'>Whatsup</h4>
     <h1>Header 1 (h1)</h1>
     <h2>Header 1 (h1)</h2>
     <h3>Header 1 (h1)</h3>
