@@ -32,7 +32,9 @@
       "$lib/*": [
         "src/lib/*"
       ],
-      "$broth": ["../broth"]
+      "$broth": [
+        "../broth"
+      ]
     }
   },
   "include": [

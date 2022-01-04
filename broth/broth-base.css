@@ -1,17 +1,78 @@
-@layer base {
-    div {
-        @apply flex flex-col relative
+/*
+ * This file includes styling only for semantic HTML5 components.
+ */
+@layer components {
+    a {
+        @apply cursor-pointer;
     }
 
-    h1, h2, h3, h4 {
+    p a {
+        @apply underline cursor-pointer;
+    }
+
+    h1 {
+        @apply text-5xl font-bold;
         @apply inline-flex gap-1;
+    }
+
+    h2 {
+        @apply text-3xl font-bold;
+        @apply inline-flex gap-1;
+    }
+
+    h3 {
+        @apply text-2xl font-semibold;
+        @apply inline-flex gap-1;
+    }
+
+    h4 {
+        @apply font-bold;
+        @apply inline-flex gap-1;
+    }
+
+    b {
+        @apply font-semibold;
+    }
+
+    label {
+        @apply font-semibold text-xs;
+    }
+
+    input {
+        @apply px-4 py-2;
+    }
+
+    code {
+        @apply rounded p-1 bg-shade;
+    }
+}
+
+/*
+ * Misc
+ */
+@layer base {
+    hr {
+        @apply border-t-2 my-2 text-shade;
+    }
+}
+
+/*
+ * Navigation
+ */
+@layer base {
+    nav {
+        @apply flex items-center;
     }
 
     nav {
         @apply flex items-center;
     }
 
-    b {
-        font-weight: 800;
+    nav button {
+        @apply rounded px-4 py-2 justify-start text-ink-secondary text-sm hover:bg-shade hover:text-ink;
+    }
+
+    nav button.selected {
+        @apply bg-shade-primary text-ink-primary hover:bg-shade-primary hover:text-ink-primary;
     }
 }

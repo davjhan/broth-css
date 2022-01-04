@@ -1,45 +1,16 @@
 /**
- * Typography
+ * This file provides a thin layer of common styles.
+ *
+ * TODOS:
+ *   - Dark mode support.
  */
 @layer components {
-    a {
-        @apply cursor-pointer;
-    }
-
-    p a {
-        @apply underline cursor-pointer;
-    }
-
-    h1 {
-        @apply text-5xl font-bold;
-    }
-
-    h2 {
-        @apply text-3xl font-bold;
-    }
-
-    h3 {
-        @apply text-2xl font-semibold;
-    }
-
-    h4 {
-        @apply font-bold;
-    }
-
-    b {
-        @apply font-semibold;
-    }
-
     .label {
         @apply font-semibold text-sm;
     }
 
-    label {
-        @apply font-semibold text-xs;
-    }
-
-    input {
-        @apply px-4 py-2 outlined-ink placeholder-ink-secondary;
+    .hint {
+        @apply text-sm text-ink-secondary;
     }
 
     .icon {
@@ -54,49 +25,39 @@
         @apply bg-ink text-white;
     }
 
-    hr {
-        @apply border-t-2 my-2 text-shade;
-    }
-
-    code {
-        @apply rounded p-1 bg-shade;
-    }
 }
 
 /*
  * Groups and Containers
  */
 @layer components {
+    .area {
+        @apply p-4 rounded;
+    }
+
+    /* An outline and some padding. */
     .outlined {
         @apply rounded border-2 border-shade;
     }
 
-    .outlined-ink {
-        @apply rounded border-2 border-ink;
-    }
-
     .circle {
-        @apply h-10 w-10 flex items-center justify-center rounded-full;
+        @apply p-4 aspect-square min-h-0 max-h-0 flex items-center justify-center rounded-full;
     }
 
     .card {
-        @apply p-4 outlined-ink bg-white flex flex-col;
-    }
-
-    .area-outlined {
-        @apply p-4 outlined rounded;
-    }
-
-    .area-shade {
-        @apply p-4 bg-shade rounded;
+        @apply p-4 outlined border-ink bg-white flex flex-col;
     }
 
     .card > hr.wide {
         @apply -mx-4 my-4;
     }
 
-    .card .header {
-        @apply -m-4 mb-4 rounded-t-sm p-4 border-b-2 border-ink;
+    .card-header {
+        @apply -m-4 mb-4 rounded-t-sm p-4 border-b-2 border-ink self-stretch;
+    }
+
+    .sticker {
+        @apply absolute -right-2 -top-3;
     }
 }
 
@@ -116,11 +77,11 @@
     }
 
     button.primary {
-        @apply outlined-ink bg-accent-primary;
+        @apply outlined border-ink bg-accent-primary;
     }
 
     button.secondary {
-        @apply outlined-ink bg-shade;
+        @apply outlined border-ink bg-shade;
     }
 
     button.text {
@@ -134,14 +95,23 @@
 }
 
 /**
- * Navigation
+ * Typography
+ *
+ * By default, all text elements have zero padding. However, this is inconvenient when styling a text document
+ * such as a blog.
+ *
+ * Therefore, we create a '.typography' class inside which, text elements will have sensible spacing.
  */
 @layer components {
-    nav button {
-        @apply rounded px-4 py-2 justify-start text-ink-secondary text-sm hover:bg-shade hover:text-ink;
+    .typography > :is(h1,h2) {
+        @apply mb-4;
     }
 
-    nav button.selected {
-        @apply bg-shade-primary text-ink-primary hover:bg-shade-primary hover:text-ink-primary;
+    .typography > :is(h3,h4,span,p,ul,li) {
+        @apply mb-2;
+    }
+
+    .typography > ul > li {
+        @apply list-disc ml-8;
     }
 }

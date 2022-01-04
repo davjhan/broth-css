@@ -17,11 +17,11 @@
     $: if (rawCodeElement) prettifiedCode = formatCode(rawCodeElement.innerHTML)
 </script>
 
-<div class='card'>
+<div class='area'>
     <div class='items-start p-2'>
         <div bind:this={rawCodeElement} class='grid grid-flow-row gap-2 auto-rows-min'>
 
-            <slot/>
+            <slot />
 
 
         </div>

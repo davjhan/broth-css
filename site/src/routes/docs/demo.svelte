@@ -40,34 +40,34 @@
             </div>
 
             <button class='primary'>
-                <Icon class='icon' src={Plus}/>
+                <Icon class='icon' src={Plus} />
                 Add to Cart
             </button>
             <button class='text text-sm mt-2 text-ink-secondary'>Remove (3)</button>
         </div>
-        <div class='card area-shade primary gap-1' id='Forms'>
-            <h3>Log in</h3>
+        <div class='card primary gap-1' id='Forms'>
+            <h3 class='header'>Log in</h3>
             <div class='flex-row mt-6 flex-grow'>
                 <label class='flex-grow' for='email'>Email</label>
                 <label class='text-ink-secondary' for='email'>Required</label>
             </div>
-            <input id='email' placeholder='Email' type='text'/>
+            <input id='email' placeholder='Email' type='text' />
 
             <div class='flex-row mt-1 flex-grow'>
                 <label class='flex-grow' for='password'>Password</label>
                 <label class='text-ink-secondary' for='password'>Required</label>
             </div>
 
-            <input id='password' placeholder='Password' type='text'/>
+            <input id='password' placeholder='Password' type='text' />
             <div class='mt-8'>
                 <button class='primary'>Log In</button>
                 <button class='text text-ink-secondary'>Forgot your password?</button>
             </div>
         </div>
     </div>
-    <div class='card'>
+    <div class='area'>
         <h4 class='header items-center'>Typography
-            <Icon class='icon' src={ChevronDoubleDown}/>
+            <Icon class='icon' src={ChevronDoubleDown} />
         </h4>
         <h1>Header 1 </h1>
         <h2>Header 2</h2>
@@ -84,9 +84,9 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
     </div>
-    <div class='card'>
+    <div class='area'>
         <h4 class='header items-center'>Buttons
-            <Icon class='icon' src={ChevronDoubleDown}/>
+            <Icon class='icon' src={ChevronDoubleDown} />
         </h4>
         <div class='grid grid-flow-row gap-2 auto-rows-min'>
             <button class=''>Unstyled</button>
@@ -101,9 +101,9 @@
         </div>
     </div>
 
-    <div class='card'>
+    <div class='area'>
         <h4 class='header items-center'>Badges
-            <Icon class='icon' src={ChevronDoubleDown}/>
+            <Icon class='icon' src={ChevronDoubleDown} />
         </h4>
         <div class='grid grid-flow-col gap-2 auto-cols-min'>
             <span class='badge'>Normal</span>

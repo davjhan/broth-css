@@ -6,7 +6,7 @@
     Card
 </h2>
 
-<svelte:options preserveWhitespace={true}/>
+<svelte:options preserveWhitespace={true} />
 <ExampleBlock>
     <div class='card '>
         <span class='label'>Example Card</span>

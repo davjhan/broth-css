@@ -6,7 +6,7 @@
     Badge
 </h2>
 
-<svelte:options preserveWhitespace={true}/>
+<svelte:options preserveWhitespace={true} />
 
 <ExampleBlock>
     <span class='badge'>Normal</span>

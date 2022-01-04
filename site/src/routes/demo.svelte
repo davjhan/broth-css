@@ -17,7 +17,7 @@
     </p>
     <button>Default Button</button>
     <button class='primary'>Primary Button</button>
-    <div class='card'>
+    <div class='area'>
         Hello its me a card
     </div>
     <div class='area'>

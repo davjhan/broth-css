@@ -6,7 +6,7 @@
     Button
 </h2>
 
-<svelte:options preserveWhitespace={true}/>
+<svelte:options preserveWhitespace={true} />
 <ExampleBlock>
     <button class=''>Unstyled Button</button>
     <button class='primary'>Primary Button</button>
