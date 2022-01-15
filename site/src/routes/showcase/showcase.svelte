@@ -34,7 +34,7 @@
             <div class='flex-row mt-2 mb-8'>
                 <div class='flex-grow mr-2'>
                     <h3>Chicken Wings</h3>
-                    <span class=''>Buffalo Sauce. <a>see more...</a></span>
+                    <span class=''>Buffalo Sauce.</span>
                 </div>
                 <span class='flex-grow mb-2 text-sm font-bold badge'>$10.99</span>
             </div>

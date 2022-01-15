@@ -1,6 +1,7 @@
-import adapter from '@sveltejs/adapter-auto'
+import adapter from '@sveltejs/adapter-static'
 import { mdsvex } from 'mdsvex'
 import { resolve } from 'path'
+const dev = process.env.NODE_ENV === 'development'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,6 +13,9 @@ const config = {
     extensions: ['.svelte', '.svx', '.mdx'],
 
     kit: {
+        paths: {
+            base: dev ? '' : '/broth-css',
+        },
         adapter: adapter(),
 
         // hydrate the <div path="svelte"> element in site/app.html
@@ -21,9 +25,6 @@ const config = {
             // other vite config
             optimizeDeps: {
                 include: ['svelte-hero-icons'],
-            },
-            build: {
-                outDir: 'dist'
             },
             resolve: {
                 alias: {

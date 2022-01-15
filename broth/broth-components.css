@@ -21,8 +21,8 @@
         @apply rounded bg-shade py-1 px-2 text-xs font-bold self-start;
     }
 
-    .badge.dark {
-        @apply bg-ink text-white;
+    .badge-dark {
+        @apply badge bg-ink text-white;
     }
 
 }
@@ -41,7 +41,7 @@
     }
 
     .circle {
-        @apply p-4 aspect-square min-h-0 max-h-0 flex items-center justify-center rounded-full;
+        @apply aspect-square h-8 flex items-center justify-center rounded-full;
     }
 
     .card {
@@ -53,7 +53,7 @@
     }
 
     .card-header {
-        @apply -m-4 mb-4 rounded-t-sm p-4 border-b-2 border-ink self-stretch;
+        @apply -m-4 mb-4 rounded-t-sm p-2 border-b-2 border-ink self-stretch;
     }
 
     .sticker {
@@ -65,6 +65,7 @@
  * Buttons
  */
 @layer components {
+
     button {
         @apply flex flex-row items-center gap-1 justify-center;
     }

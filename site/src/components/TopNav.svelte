@@ -5,7 +5,7 @@
 
 <nav class='py-2'>
     <button class='px-2' on:click={() => goto('/')}>
-        <h4>Broth CSS</h4>
+        <h4 class='text-ink'>Broth CSS</h4>
         <div class='ml-1 badge'>Alpha</div>
     </button>
     <div class='flex-grow'></div>
@@ -13,8 +13,8 @@
         <li>
             <button
                     class='text'
-                    class:selected={$page.path.split('/')[1] === 'docs'}
-                    on:click={()=> goto('/docs')}>Docs
+                    class:selected={$page.path.split('/')[1] === 'showcase'}
+                    on:click={()=> goto('/showcase')}>Showcase
             </button>
         </li>
     </ul>

@@ -2,18 +2,19 @@
     import { goto } from '$app/navigation'
     import { page } from '$app/stores'
 
-    const menuItems = [{
-        title: 'showcase',
-        routes: [
-            { path: '/docs/demo#Cards', display: 'Cards' },
-            { path: '/docs/demo#Forms', display: 'Forms' },
-        ],
-    }, {
+    const menuItems = [
+    //     title: 'showcase',
+    //     routes: [
+    //         { path: '/showcase/demo#Cards', display: 'Cards' },
+    //         { path: '/showcase/demo#Forms', display: 'Forms' },
+    //     ],
+    // },
+        {
         title: 'Components',
         routes: [
-            { path: '/docs/components/button', display: 'Button' },
-            { path: '/docs/components/badge', display: 'Badge' },
-            { path: '/docs/components/card', display: 'Card' },
+            { path: '/showcase/components/button', display: 'Button' },
+            { path: '/showcase/components/badge', display: 'Badge' },
+            { path: '/showcase/components/card', display: 'Card' },
         ],
     }]
 </script>
