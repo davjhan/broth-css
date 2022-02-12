@@ -1,16 +1,10 @@
 /*
- * This file contains defaults that may be more controversial.
+ * This file contains defaults that are more opinionated.
  * If you don't want to adopt these, just import all other broth-*.css files except this.
  */
 @layer base {
     /* Make all divs are flex-boxes by default. */
     div {
         @apply flex flex-col relative
-    }
-
-    /* Defaults for the tailwind Typography plugin. */
-
-    .broth-prose {
-        @apply prose prose-pre:my-2 prose-code:before:transform-none prose-code:after:transform-none max-w-none
     }
 }

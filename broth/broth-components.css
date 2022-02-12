@@ -55,6 +55,9 @@
     .card-header {
         @apply -m-4 mb-4 rounded-t-sm p-2 border-b-2 border-ink self-stretch;
     }
+    .card-footer {
+        @apply -m-4 mt-4 rounded-b-sm p-2 border-t-2 border-ink self-stretch;
+    }
 
     .sticker {
         @apply absolute -right-2 -top-3;
@@ -78,7 +81,7 @@
     }
 
     button.primary {
-        @apply outlined border-ink bg-accent-primary;
+        @apply outlined border-ink bg-accent;
     }
 
     button.secondary {

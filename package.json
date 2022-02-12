@@ -2,12 +2,12 @@
   "name": "broth-css",
   "version": "0.0.1",
   "files": [
-    "dist/*"
+    "dist"
   ],
   "scripts": {
     "yalc:push": "yalc push --scripts",
     "preyalc": "prepublish",
-    "prepublish": "cp -r broth/. dist"
+    "prepublish": "cp -r broth/. dist "
   },
   "devDependencies": {
     "tailwindcss": "^3.0.8"

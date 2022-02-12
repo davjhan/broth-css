@@ -7,15 +7,20 @@ module.exports = {
             DEFAULT: colors.black,
             primary: colors.amber[600],
             secondary: colors.gray[500],
-            error: colors.red[500],
+            error: colors.red[800],
+            success: colors.green[600],
         },
         accent: {
-            primary: colors.amber[300],
+            DEFAULT: colors.amber[300],
         },
         shade: {
             DEFAULT: colors.gray[100],
+            dark: colors.gray[200],
             primary: colors.amber[100],
-            success: colors.green[300]
+            'primary-dark': colors.amber[200],
+            success: colors.green[100],
+            error: colors.red[100],
+            'error-dark': colors.red[200],
         },
-    }
+    },
 }

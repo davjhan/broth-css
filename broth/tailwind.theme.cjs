@@ -7,11 +7,11 @@ module.exports = {
             DEFAULT: colors.black,
             primary: colors.amber[600],
             secondary: colors.gray[500],
-            error: colors.red[600],
+            error: colors.red[800],
             success: colors.green[600],
         },
         accent: {
-            primary: colors.amber[300],
+            DEFAULT: colors.amber[300],
         },
         shade: {
             DEFAULT: colors.gray[100],
