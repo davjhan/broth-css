@@ -77,11 +77,11 @@ module.exports = {
             <div class='gap-2 self-center sm:self-start'>
                 <code class='area bg-ink text-white text-sm py-2'>npm i -D
                     @davjhan/broth-css</code>
-                <button class='primary' on:click={()=>goto('/showcase')}>
+                <button class='primary lg' on:click={()=>goto('/showcase')}>
                     <Icon class='icon' src={BookOpen} />
                     View Documentation
                 </button>
-                <button class='secondary' on:click={()=>goto('/showcase')}>
+                <button class='secondary lg' on:click={()=>goto('/showcase')}>
                     <Icon class='icon' src={Code} />
                     View on Github
                 </button>

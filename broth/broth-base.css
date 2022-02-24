@@ -1,26 +1,42 @@
 /*
  * This file includes styling only for semantic HTML5 components.
  */
+
+/*
+* ----- Typography -----
+*/
 @layer components {
     a {
         @apply cursor-pointer;
     }
-    p a {
-        @apply underline cursor-pointer;
+
+    b {
+        @apply font-semibold;
+    }
+
+    p {
+        @apply py-4;
+
+        a {
+            @apply underline cursor-pointer;
+        }
     }
 
     h1 {
-        @apply text-5xl font-bold;
+        @apply text-3xl font-bold;
         @apply inline-flex gap-1;
+
+        @apply sm:text-5xl;
     }
 
     h2 {
-        @apply text-2xl font-bold;
+        @apply text-3xl font-bold;
         @apply inline-flex gap-1;
+
     }
 
     h3 {
-        @apply text-lg font-semibold;
+        @apply text-xl font-semibold;
         @apply inline-flex gap-1;
     }
 
@@ -29,8 +45,30 @@
         @apply inline-flex gap-1;
     }
 
-    b {
-        @apply font-semibold;
+
+}
+
+/*
+ * Responsiveness
+ */
+@layer base {
+    html {
+        /* Disable black flicker when clicking buttons on mobile safari */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-size: 14px;
+
+        @screen sm {
+            font-size: 16px;
+        }
+    }
+}
+
+/*
+ * Misc
+ */
+@layer components {
+    hr {
+        @apply border-t-2 my-2 text-shade;
     }
 
     label {
@@ -44,15 +82,7 @@
     code {
         @apply rounded p-1 bg-shade;
     }
-}
 
-/*
- * Misc
- */
-@layer base {
-    hr {
-        @apply border-t-2 my-2 text-shade;
-    }
 }
 
 /*
@@ -61,17 +91,14 @@
 @layer base {
     nav {
         @apply flex items-center;
+
+        button {
+            @apply rounded px-4 py-2 justify-start text-ink-secondary text-sm hover:bg-shade hover:text-ink;
+        }
+
+        button.selected {
+            @apply bg-shade-primary text-ink-primary hover:bg-shade-primary hover:text-ink-primary;
+        }
     }
 
-    nav {
-        @apply flex items-center;
-    }
-
-    nav button {
-        @apply rounded px-4 py-2 justify-start text-ink-secondary text-sm hover:bg-shade hover:text-ink;
-    }
-
-    nav button.selected {
-        @apply bg-shade-primary text-ink-primary hover:bg-shade-primary hover:text-ink-primary;
-    }
 }

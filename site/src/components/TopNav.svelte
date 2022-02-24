@@ -13,7 +13,7 @@
         <li>
             <button
                     class='text'
-                    class:selected={$page.path.split('/')[1] === 'showcase'}
+                    class:selected={$page.url.pathname.split('/')[1] === 'showcase'}
                     on:click={()=> goto('/showcase')}>Showcase
             </button>
         </li>

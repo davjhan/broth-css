@@ -6,3 +6,4 @@ package/
 .env
 .env.*
 .vscode/
+dist/

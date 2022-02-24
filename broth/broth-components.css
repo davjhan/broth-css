@@ -46,14 +46,14 @@
 
     .card {
         @apply p-4 outlined border-ink bg-white flex flex-col;
-    }
 
-    .card > hr.wide {
-        @apply -mx-4 my-4;
+        > hr.wide {
+            @apply -mx-4 my-4;
+        }
     }
 
     .card-header {
-        @apply -m-4 mb-4 rounded-t-sm p-2 border-b-2 border-ink self-stretch;
+        @apply -m-4 mb-4 rounded-t-sm p-2 border-b-2 border-ink self-stretch label;
     }
     .card-footer {
         @apply -m-4 mt-4 rounded-b-sm p-2 border-t-2 border-ink self-stretch;
@@ -61,6 +61,9 @@
 
     .sticker {
         @apply absolute -right-2 -top-3;
+    }
+    .squishy {
+        @apply active:scale-90 transition-transform;
     }
 }
 
@@ -70,52 +73,29 @@
 @layer components {
 
     button {
-        @apply flex flex-row items-center gap-1 justify-center;
-    }
+        @apply flex flex-row items-center gap-1 justify-center origin-center font-semibold;
 
-    button.primary, button.secondary {
-        @apply px-8 py-2 rounded font-bold;
-        @apply hover:filter hover:brightness-105;
-        @apply active:filter active:brightness-110;
-        @apply disabled:opacity-50;
-    }
+        &.primary, &.secondary {
+            @apply px-4 py-1 rounded outlined border-ink ;
+            @apply active:brightness-110;
+            @apply disabled:opacity-50;
+            &.lg {
+                @apply px-8 py-2;
+            }
+        }
 
-    button.primary {
-        @apply outlined border-ink bg-accent;
-    }
+        &.primary {
+            @apply bg-accent;
+        }
 
-    button.secondary {
-        @apply outlined border-ink bg-shade;
-    }
+        &.secondary {
+            @apply bg-shade;
+        }
 
-    button.text {
-        @apply px-4 py-2 rounded font-semibold;
-        @apply hover:bg-shade active:underline;
-    }
+        &.text {
+            @apply px-4 py-1 rounded font-semibold;
+            @apply hover:bg-shade active:underline;
+        }
 
-    button.text.text-sm {
-        @apply px-4 py-1 font-semibold;
-    }
-}
-
-/**
- * Typography
- *
- * By default, all text elements have zero padding. However, this is inconvenient when styling a text document
- * such as a blog.
- *
- * Therefore, we create a '.typography' class inside which, text elements will have sensible spacing.
- */
-@layer components {
-    .typography > :is(h1,h2) {
-        @apply mb-4;
-    }
-
-    .typography > :is(h3,h4,span,p,ul,li) {
-        @apply mb-2;
-    }
-
-    .typography > ul > li {
-        @apply list-disc ml-8;
     }
 }

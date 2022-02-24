@@ -19,11 +19,8 @@
 
 <div class='area'>
     <div class='items-start p-2'>
-        <div bind:this={rawCodeElement} class='grid grid-flow-row auto-rows-min gap-2'>
-
+        <div bind:this={rawCodeElement} class='grid grid-flow-row auto-rows-min gap-2 '>
             <slot />
-
-
         </div>
     </div>
     {#if rawCodeElement}

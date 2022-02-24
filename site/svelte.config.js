@@ -18,9 +18,6 @@ const config = {
         },
         adapter: adapter(),
 
-        // hydrate the <div path="svelte"> element in site/app.html
-        target: '#svelte',
-
         vite: {
             // other vite config
             optimizeDeps: {

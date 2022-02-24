@@ -26,7 +26,7 @@
                 {#each item.routes as route}
                     <button
                             class=''
-                            class:selected={$page.path === route.path}
+                            class:selected={$page.url.pathname === route.path}
                             on:click={()=>goto(route.path)}>
                         {route.display}
                     </button>
